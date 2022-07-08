@@ -313,7 +313,7 @@
             "settings": {
               "announcement_text": "<p><strong>Politique de retours sous 30 jours<\/strong><\/p>",
               "announcement_counter": "",
-              "announcemen_link": "",
+              "announcement_link": "",
               "announcement_end_text": ""
             }
           }
@@ -482,7 +482,7 @@
         "settings": {
           "show_social_media": false,
           "social_title": "Follow-us on social media!",
-          "show_payment_icons": true,
+          "show_payment_icons": false,
           "show_shopify_footer": false,
           "show_debutify_footer": false,
           "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N, Danemark. Numéro SIRET: FR 55 828497255.<\/p><p><\/p>"
