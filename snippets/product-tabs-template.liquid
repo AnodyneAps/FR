@@ -153,6 +153,7 @@
     {%- endif -%}
   <div class="box">
     <div class="wrapper">
+      {%- if section.settings.blackdays_banner != blank -%} <div class="product__banner"><img src="{{section.settings.blackdays_banner | img_url:'1200x100'}}" alt="Anodyne black days"></div>{%- endif -%} 
       <div class="grid product-single">
         <!-- left grid item  -->
         <div id="ProductMedia-{{ section.id }}" class="grid__item {{ product_image_width }} text-center">

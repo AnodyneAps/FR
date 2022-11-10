@@ -35,6 +35,10 @@
 					{%- if section.settings.video_title != blank -%}
 						<h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.video_title }}</h2>
 					{%- endif -%}
+          {%- unless section.settings.svg_selector == 'none' -%}
+            <h2 class="h1 black-title">{%- render 'icon' with {{section.settings.svg_selector}} -%}
+            </h2>
+          {%- endunless -%}
 					{%- if section.settings.text_description != blank -%}
 						<div class="rte-setting mega-subtitle{% if section.settings.text_description_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text_description }}</div>
 					{%- endif -%}
@@ -90,6 +94,24 @@
         }
       ]
     },
+    {
+        "type": "select",
+        "id": "svg_selector",
+        "label": "Select title ex. Black Days or Cyber Days",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          }, {
+            "value": "blackdays",
+            "label": "Black Days"
+          }, {
+            "value": "cyberdays",
+            "label": "Cyber Days"
+          }
+        ],
+        "default": "none"
+      },
     {
       "type": "select",
       "id": "height",

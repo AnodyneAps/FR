@@ -4059,6 +4059,15 @@ table {
     height: 100%;
   }
 }
+.product__banner{
+  margin-top: -$gutter-sm;
+  margin-bottom: $gutter-sm;
+  @include screenUp($postSmall){
+      margin-top: -$gutter;
+        margin-bottom: $gutter;
+  }
+}
+
 .product-single__media-group-wrapper{
   @include screenUp($postSmall){
     position: sticky !important;
@@ -10012,6 +10021,9 @@ selector[data-type="languages"][data-id="283692853"].ls-sw-closed > .active:afte
   .first{
     color:$cAccent;
   }
+}
+.videoblock .hero-fixed-width__content .black-title{
+  padding:0 $gutter;
 }
 .videoblock .hero-fixed-width__content .mega-subtitle {
   p {
